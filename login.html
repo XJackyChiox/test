@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDnN54vocdDuU0E1RO57cuANvv6FJDXq4c",
+      authDomain: "test1-1a43d.firebaseapp.com",
+      databaseURL: "https://test1-1a43d-default-rtdb.firebaseio.com",
+      projectId: "test1-1a43d",
+      storageBucket: "test1-1a43d.appspot.com",
+      messagingSenderId: "42424557691",
+      appId: "1:42424557691:web:2bf1a5bc5d652ebb32c2de"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <script src="login.js"></script>
+<body>
+    
+<input type="email" placeholder="Email..." id="emailField" />
+<input type="password" placeholder="Password..." id="passwordField" />
+
+<button onclick="login()">Login</button>
+</body>
+</html>
